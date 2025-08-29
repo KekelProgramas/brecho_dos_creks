@@ -26,13 +26,7 @@ body {
   justify-self: start;
   width: 100%;
   max-width: 25vw;
-}
-
-#pesquisa_img {
-  position: absolute;
-  right: 0.5em;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
 }
 
 #pesquisa {
@@ -44,8 +38,14 @@ body {
   font-size: 0.9em;
   outline: none;
   transition: 0.3s;
-  position: relative;
 }
+
+#pesquisa_img {
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 #logo {
   display: flex;
