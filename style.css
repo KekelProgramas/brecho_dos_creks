@@ -169,6 +169,7 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: center;
   font-size: 2em;
   color: #556b5e;
+  margin-bottom: 20px;
 }
 
 .rodape {
