@@ -157,19 +157,113 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .produtos_secao {
-  display: flex;
-  align-items: center;
-  padding: 40px 20px;
+  padding: 40px 20px;    
   max-width: 1200px;
+  margin: 0 auto;        
 }
 
 .produto_titulo {
+  text-align: center;  
+  font-size: 2em;
+  color: #556b5e;
+  margin-bottom: 30px;  
+}
+
+.produto_container {
+  display: grid;                                
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;                                      
+  margin-bottom: 20px;                          
+}
+
+.produto_img {
+  width: 100%;
+  height: 258px;         
+  background: #556b5e; 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
-  color: #556b5e;
-  margin-bottom: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+}
+
+.produto:nth-child(1) .produto_img { background: #556b5e; }
+.produto:nth-child(2) .produto_img { background: #8B5A5A; }
+.produto:nth-child(3) .produto_img { background: #5A7A8B; }
+.produto:nth-child(4) .produto_img { background: #8B7A5A; }
+
+.produto_img {
+  width: 100%;
+  height: 200px;         
+  background: #556b5e;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+}
+
+.produto:nth-child(1) .produto_img { background: #556b5e; }
+.produto:nth-child(2) .produto_img { background: #8B5A5A; }
+.produto:nth-child(3) .produto_img { background: #5A7A8B; }
+.produto:nth-child(4) .produto_img { background: #556b5e; }
+.produto:nth-child(5) .produto_img { background: #8B5A5A; }
+.produto:nth-child(6) .produto_img { background: #5A7A8B; }
+
+.produto_info {
+  padding: 20px;
+  justify-items: center;
+}
+
+.produto_nome {  
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #121212;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, sans-serif;
+}
+
+.produto_valor {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #121212; 
+  margin-bottom: 16px;
+  font-family: "Karla", sans-serif; 
+}
+
+.produto_comprar {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  background: #556b5e;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "CooperFiveOpti", Arial, sans-serif;
+}
+
+.produto_comprar:hover {
+  background: #343f39;
 }
 
 .rodape {
