@@ -401,7 +401,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .sobrenos_txt p {
   font-size: 1em;
   color: var(--cor-texto);
-  text-align: justify;
+  text-align: center;
 }
 
 /* ⋆.ೃ࿔*:･ 𝕮𝖔𝖓𝖙𝖆𝖙𝖔 */
@@ -870,6 +870,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 }
+
 
 
 
