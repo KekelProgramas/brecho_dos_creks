@@ -59,7 +59,7 @@ main {
 /* ⋆.ೃ࿔*:･ 𝕿𝖔𝖕𝖔 */
 #top_cabeca {
   background-color: var(--cor-topbar-bg);
-  color: var(--cor-rodape-texto);
+  color: var(--cor-secundaria);
   font-size: 0.8em;
   text-align: center;
   font-family: var(--fonte-secundaria);
@@ -869,4 +869,5 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 }
+
 
