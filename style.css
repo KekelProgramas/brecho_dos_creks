@@ -27,6 +27,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -392,7 +393,7 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: flex-start;
   gap: 1em;
   max-width: 600px;
-  font-family: var(--fonte-secundaria);
+  font-family: "Chivo", sans-serif;
   line-height: 1.6;
   color: var(--cor-texto);
 }
@@ -869,5 +870,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 }
+
 
 
