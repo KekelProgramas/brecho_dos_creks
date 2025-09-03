@@ -248,6 +248,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: center;
   border-radius: var(--radius);
   transition: var(--transicao);
+  cursor: pointer;
 }
 
 .categoria:hover {
@@ -316,6 +317,8 @@ input[type="search"]::-webkit-search-results-decoration {
   overflow: hidden;
   box-shadow: var(--sombra);
   transition: var(--transicao);
+  cursor: pointer;
+
 }
 
 .produto:hover {
