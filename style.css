@@ -366,17 +366,121 @@ input[type="search"]::-webkit-search-results-decoration {
   background: var(--cor-destaque);
 }
 
+.sobrenos_container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: flex; 
+  align-items: center;
+  gap: 40px;
+  padding: 2em; 
+}
+
+.sobrenos_img {
+  width: 25vw;
+  max-width: 350px;
+  border-radius: 10px; 
+  object-fit: cover;
+}
+
+.sobrenos_txt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  max-width: 600px;
+  font-family: var(--fonte-secundaria);
+  line-height: 1.6;
+  color: var(--cor-texto);
+}
+
+.sobrenos_txt p {
+  font-size: 1em;
+  color: var(--cor-texto);
+  text-align: justify;
+}
+
+
+/* ⋆.ೃ࿔*:･ 𝕮𝖔𝖓𝖙𝖆𝖙𝖔 */
+.contato_main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+}
+
+.contato_container {
+  background: var(--cor-fundo2);
+  padding: 2em;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  width: 90vw;
+  max-width: 700px;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-secundaria);
+}
+
+.contato_titulo {
+  font-size: 1.8em;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+}
+
+.contato_subtitulo {
+  font-size: 1em;
+  color: var(--cor-texto);
+  opacity: 0.8;
+}
+
+.contato_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contato_input,
+.contato_textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: none;
+  border-bottom: 2px solid var(--cor-secundaria);
+  background: transparent;
+  outline: none;
+  font-size: 1em;
+  transition: var(--transicao);
+  font-family: var(--fonte-secundaria);
+}
+
+.contato_textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+#contato_botao {
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+}
+
 /* ⋆.ೃ࿔*:･ 𝕷𝖔𝖌𝖎𝖓 */
+.login_body {
+  padding-bottom: 60vh, 400 + 1.5rem;
+}
+
 .login_main {
-  padding: 0;
   margin: 0;
   position: relative;
   min-height: calc(100vh - 200px);
+  justify-content: flex-end;
 }
 
 .login_icone {
+  display: block;
   position: absolute;
-  top: calc(50% - 200px);
+  top: calc(50% - 35vh);
   left: 50%;
   transform: translate(-50%, 50%);
   width: 70px;
@@ -387,10 +491,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }   
   
 .login_container {
-  position: fixed;  
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,12 +501,9 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 60vh;
   max-height: 400px;
   background-color: var(--cor-fundo2);
-  z-index: 2000;
   padding: 2em 1em;
   box-shadow: var(--sombra);
   border-radius: var(--radius);
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
   font-family: var(--fonte-secundaria);
   color: var(--cor-texto);
 }
@@ -515,9 +614,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: auto;
 }
 
-/* MEDIA QUERIES PARA RESPONSIVIDADE */
-
-/* Tablets */
 @media screen and (max-width: 1024px) {
   .cabeca {
     padding: 0 3vw;
@@ -539,9 +635,13 @@ input[type="search"]::-webkit-search-results-decoration {
   .categorias {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
+
+  .login_icone {
+    visibility: hidden;
+  }
+  
 }
 
-/* Smartphones grandes */
 @media screen and (max-width: 768px) {
   .cabeca {
     grid-template-columns: 1fr;
@@ -619,9 +719,13 @@ input[type="search"]::-webkit-search-results-decoration {
   #login_botao {
     width: 90%;
   }
+
+  .login_icone {
+    visibility: hidden;
+  }
+
 }
 
-/* Smartphones pequenos */
 @media screen and (max-width: 480px) {
   #top_cabeca {
     font-size: 0.7em;
@@ -725,9 +829,13 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 0.7em;
     padding: 0.8em;
   }
+
+  .login_icone {
+    visibility: hidden;
+  }
+
 }
 
-/* Smartphones muito pequenos */
 @media screen and (max-width: 320px) {
   .abas {
     font-size: 0.6em;
@@ -752,4 +860,9 @@ input[type="search"]::-webkit-search-results-decoration {
   .login_container {
     width: 98vw;
   }
+
+  .login_icone {
+    visibility: hidden;
+  }
+
 }
