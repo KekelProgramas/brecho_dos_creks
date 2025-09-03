@@ -608,7 +608,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .rodape {
   background-color: var(--cor-rodape-bg);
   color: var(--cor-rodape-texto);
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-align: center;
   font-family: var(--fonte-secundaria);
   padding: var(--padding-medio);
@@ -866,5 +866,6 @@ input[type="search"]::-webkit-search-results-decoration {
   .login_icone {
     visibility: hidden;
   }
+
 
 }
