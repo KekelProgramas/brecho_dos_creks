@@ -1,4 +1,4 @@
-# 🎩 — 𝕭𝖗𝖊𝖈𝖍𝖔́ 𝖉𝖔𝖘 𝕮𝖗𝖊𝖐𝖘
+# 🎩 — 𝕭𝖗𝖊𝖈𝖍𝖔 𝖉𝖔𝖘 𝕮𝖗𝖊𝖐𝖘
 
 Um site criado para desenvolver habilidades de **front-end** que simula um brechó online de roupas.
 
@@ -56,7 +56,7 @@ O site é se inspira no brechó **[Brechó Gertrudez](https://www.brechogertrude
 
 ---
 
-## 🔮— 𝕸𝖊𝖑𝖍𝖔𝖗𝖎𝖆𝖘 𝖖𝖚𝖊 𝖛𝖎𝖗𝖆̃𝖔
+## 🔮— 𝕸𝖊𝖑𝖍𝖔𝖗𝖎𝖆𝖘 𝖖𝖚𝖊 𝖛𝖎𝖗𝖆𝖔
 
 - Melhor responsividade para telas maiores e para celulares;
 - Back-end que torne o site interativo;
